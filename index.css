@@ -1,1 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
+.navbar {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    color: white;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar nav li {
+    float: left;
+}
+
+.navbar nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar nav li a:hover {
+    background-color: #111;
+}
+
+.background-image {
+    background-image: url('image/image1.png'); /* 替换为实际图片路径 */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
