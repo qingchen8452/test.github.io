@@ -2,6 +2,8 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
@@ -9,6 +11,7 @@ body, html {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
     color: white;
+    height: 60px; /* 设置导航栏高度 */
 }
 
 .navbar nav ul {
@@ -34,17 +37,11 @@ body, html {
     background-color: #111;
 }
 
-.carousel {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-}
-
-.carousel .carousel-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+.background-image {
+    flex: 1; /* 占据剩余空间 */
+    background-image: url('image/image1.png'); /* 替换为实际图片路径 */
+    width: 100%; /* 宽度为100% */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
