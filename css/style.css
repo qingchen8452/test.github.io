@@ -55,7 +55,8 @@ header{
     position: fixed;
     top:0; left:0; right:0;
     background:#fff;
-    padding:2rem 9%;
+    padding:1rem ;
+    height:60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
