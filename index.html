@@ -16,6 +16,34 @@
             </ul>
         </nav>
     </header>
-    <div class="background-image" style="background-image: url('image/image1.png');"></div>
+    <div class="carousel">
+        <img src="image/image1.png" alt="Image 1" class="carousel-image">
+        <img src="image/image2.png" alt="Image 2" class="carousel-image">
+        <img src="image/image3.png" alt="Image 3" class="carousel-image">
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('.carousel .carousel-image');
+            let index = 0;
+
+            function showNextImage() {
+                // 隐藏当前图片
+                images[index].style.opacity = '0';
+
+                // 计算下一个图片索引
+                index = (index + 1) % images.length;
+
+                // 显示下一个图片
+                images[index].style.opacity = '1';
+            }
+
+            // 初始化显示第一张图片
+            showNextImage();
+
+            // 每隔4秒切换一次图片
+            setInterval(showNextImage, 4000);
+        });
+    </script>
 </body>
 </html>
