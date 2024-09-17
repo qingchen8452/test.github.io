@@ -62,7 +62,36 @@ header{
     z-index: 1000;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
+.logo-img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    margin-right: 1rem; /* 可根据需要调整间距 */
+}
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* 响应式设计 */
+@media (max-width: 991px) {
+    header {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    header {
+        padding: 0.25rem;
+    }
+}
 header .logo{
     font-size: 3rem;
     color:#333;
