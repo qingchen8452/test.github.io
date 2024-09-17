@@ -63,8 +63,8 @@ header{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 .logo-img {
-    width: 128px;
-    height: 128px;
+    width: 88px;
+    height: 88px;
     object-fit: cover;
     margin-right: 1rem; /* 可根据需要调整间距 */
 }
