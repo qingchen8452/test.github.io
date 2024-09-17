@@ -12,34 +12,20 @@ body, html {
     background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
     color: white;
     height: 60px; /* 设置导航栏高度 */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px; /* 添加左右内边距 */
 }
 
-.navbar nav {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.menu {
+.navbar nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    overflow: hidden;
 }
 
-.menu li {
-    margin-left: 20px; /* 添加左侧外边距 */
+.navbar nav li {
+    float: left;
 }
 
-.menu li a {
+.navbar nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -47,7 +33,7 @@ body, html {
     text-decoration: none;
 }
 
-.menu li a:hover {
+.navbar nav li a:hover {
     background-color: #111;
 }
 
@@ -58,4 +44,23 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative; /* 使花瓣定位相对于背景图像 */
+}
+
+.petal {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: pink;
+    animation: fall 5s ease-in-out infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(-100%, 100%);
+    }
 }
