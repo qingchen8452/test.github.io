@@ -12,20 +12,34 @@ body, html {
     background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
     color: white;
     height: 60px; /* 设置导航栏高度 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* 添加左右内边距 */
 }
 
-.navbar nav ul {
+.navbar nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
 }
 
-.navbar nav li {
-    float: left;
+.menu li {
+    margin-left: 20px; /* 添加左侧外边距 */
 }
 
-.navbar nav li a {
+.menu li a {
     display: block;
     color: white;
     text-align: center;
@@ -33,7 +47,7 @@ body, html {
     text-decoration: none;
 }
 
-.navbar nav li a:hover {
+.menu li a:hover {
     background-color: #111;
 }
 
