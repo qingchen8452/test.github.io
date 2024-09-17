@@ -35,7 +35,7 @@ body, html {
 }
 
 .background-image {
-    background-image: url('https://github.com/qingchen8452/test.github.io/blob/main/image/image1.png'); /* 替换为实际图片路径 */
+    background-image: url('image/image1.png'); /* 替换为实际图片路径 */
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
