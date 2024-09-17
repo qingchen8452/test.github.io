@@ -73,7 +73,7 @@ header{
 .logo {
     display: flex;
     align-items: center;
-    margin-left: -0.5rem; /* 向左移动 */
+    margin-left: -3rem; /* 向左移动 */
 }
 
 /* 响应式设计 */
